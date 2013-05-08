@@ -10,6 +10,7 @@
 		84533F57173B0B3E00C537E9 /* GreenMan.png in Resources */ = {isa = PBXBuildFile; fileRef = 84533F56173B0B3E00C537E9 /* GreenMan.png */; };
 		84533F59173B0C2500C537E9 /* CrabbEnemie.png in Resources */ = {isa = PBXBuildFile; fileRef = 84533F58173B0C2500C537E9 /* CrabbEnemie.png */; };
 		84A5FB511728117C00F60DDF /* HUDLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5FB501728117C00F60DDF /* HUDLayer.m */; };
+		84A6F442173A8E40008DF5B2 /* TileMapFirstLvL.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 84A6F441173A8E40008DF5B2 /* TileMapFirstLvL.tmx */; };
 		84A6F459173A9699008DF5B2 /* Life-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A6F458173A9699008DF5B2 /* Life-bar.png */; };
 		84A6F45F173A9A10008DF5B2 /* minotaurus_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A6F45E173A9A10008DF5B2 /* minotaurus_red.png */; };
 		84A6F474173AA8AD008DF5B2 /* TileMapFirstLvL.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 84A6F473173AA8AD008DF5B2 /* TileMapFirstLvL.tmx */; };
