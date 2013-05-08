@@ -28,6 +28,8 @@
     
 }
 
++(CCScene *) scene;
+
 //Adam
 @property (nonatomic,retain) HUDLayer *hud;
 
