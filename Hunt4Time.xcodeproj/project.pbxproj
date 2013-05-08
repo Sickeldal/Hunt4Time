@@ -176,7 +176,6 @@
 		84A6F473173AA8AD008DF5B2 /* TileMapFirstLvL.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TileMapFirstLvL.tmx; path = Resources/TileMapFirstLvL.tmx; sourceTree = "<group>"; };
 		84A6F475173AAAAA008DF5B2 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
 		84A6F476173AAAAA008DF5B2 /* Enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy.m; sourceTree = "<group>"; };
->>>>>>> origin/adam_dev
 		FF05384E17269273009B7B03 /* Hunt4Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hunt4Time.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF05385217269273009B7B03 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FF05385417269273009B7B03 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
