@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "cocos2d.h" //Hej Adam 2 gånger om!
+#import "cocos2d.h" // David test!
+
 
 
 

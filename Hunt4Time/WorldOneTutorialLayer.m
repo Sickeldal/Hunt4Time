@@ -20,7 +20,6 @@
 
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.
 
-
     +(CCScene *) scene
 {
 
@@ -118,26 +117,8 @@ if( (self=[super init])) {
         // behöver man z:-1?
         [self addChild:self.tileMap];
     
-    CCTMXObjectGroup *objectGroup = [_tileMap objectGroupNamed:@"Objects"];
-    NSAssert(objectGroup != nil, @"tile map has no objects object layer");
-
     
     
-    //Adam
-    NSDictionary *spawnPoint = [objectGroup objectNamed:@"SpawnPoint"];
-    int x = [spawnPoint[@"x"] integerValue];
-    int y = [spawnPoint[@"y"] integerValue];
-
-    
-    
-    //Adam
-    for (spawnPoint in [objectGroup objects]) {
-        if ([[spawnPoint valueForKey:@"Enemy"] intValue] == 1){
-            x = [[spawnPoint valueForKey:@"x"] intValue];
-            y = [[spawnPoint valueForKey:@"y"] intValue];
-            [self addEnemyAtX:x y:y];
-        }
-    }
     
         // Looks for an image with the same name as the passed-in property list, but ending with “.png” instead, and loads that file into the shared CCTextureCache (in our case, AnimPlayer.png).
         // Parses the property list file and keeps track of where all of the sprites are, using CCSpriteFrame objects internally to keep track of this information.
@@ -160,8 +141,6 @@ if( (self=[super init])) {
              [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:
               [NSString stringWithFormat:@"nudeplayer_e_%d.png",i]]];
         }
-    
-    
         
         //You create a CCAnimation by passing in the list of sprite frames, and specifying how fast the animation should play. You are using a 0.1 second delay between frames here.
         CCAnimation *walkAnim = [CCAnimation
@@ -183,16 +162,11 @@ if( (self=[super init])) {
         self.touchEnabled = YES;
 
     
-    
         [self scheduleUpdate];
-    
-
-
 
 	}
 	return self;
 }
-
 
 /*
 // After init
@@ -255,21 +229,6 @@ if( (self=[super init])) {
    // _player.position = position;
     
 }
-
-
-//Adam
--(void)addEnemyAtX:(int)x y:(int)y {
-    CCSprite *enemy = [CCSprite spriteWithFile:@"minotaurus_red.png"];
-    enemy.position = ccp(x, y);
-    [self.tileMap addChild:enemy];
-    
-    // Use our animation method and
-    // start the enemy moving toward the player
-    //[self animateEnemy:enemy];
-    
-    //[self.enemies addObject:enemy];
-}
-
 
 -(void)ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
 {
@@ -372,5 +331,3 @@ if( (self=[super init])) {
 }
 
 @end
-
-
