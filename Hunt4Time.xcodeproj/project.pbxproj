@@ -536,8 +536,6 @@
 			children = (
 				FF0539EB17269276009B7B03 /* AppDelegate.h */,
 				FF0539EC17269276009B7B03 /* AppDelegate.m */,
-				84A6F475173AAAAA008DF5B2 /* Enemy.h */,
-				84A6F476173AAAAA008DF5B2 /* Enemy.m */,
 				FFA5EDE11733E1C2002264A7 /* MainMenuScene.h */,
 				FFA5EDE21733E1C2002264A7 /* MainMenuScene.m */,
 				FF053BD21726CB4E009B7B03 /* Player.h */,
@@ -558,8 +556,6 @@
 		FF05386517269273009B7B03 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				84A6F45D173A9A04008DF5B2 /* Enemies */,
-				84A6F454173A9612008DF5B2 /* Hudlayer */,
 				FFA5EDE81733F2EF002264A7 /* Menu */,
 				FFA5EDE71733F2D1002264A7 /* Map */,
 				FFA5EDE61733F2A8002264A7 /* Player */,
@@ -1176,7 +1172,6 @@
 				FF053BD41726CB4E009B7B03 /* Player.m in Sources */,
 				84A5FB511728117C00F60DDF /* HUDLayer.m in Sources */,
 				FFA5EDE31733E1C2002264A7 /* MainMenuScene.m in Sources */,
-				84A6F477173AAAAA008DF5B2 /* Enemy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

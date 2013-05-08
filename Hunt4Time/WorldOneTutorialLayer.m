@@ -20,7 +20,6 @@
 
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.
 
-
     +(CCScene *) scene
 {
     
@@ -154,8 +153,6 @@ if( (self=[super init])) {
              [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:
               [NSString stringWithFormat:@"nudeplayer_e_%d.png",i]]];
         }
-    
-    
         
         //You create a CCAnimation by passing in the list of sprite frames, and specifying how fast the animation should play. You are using a 0.1 second delay between frames here.
         CCAnimation *walkAnim = [CCAnimation
@@ -177,11 +174,7 @@ if( (self=[super init])) {
         self.touchEnabled = YES;
 
     
-    
         [self scheduleUpdate];
-    
-
-
 
 	}
 	return self;
@@ -205,7 +198,6 @@ if( (self=[super init])) {
     [self addChild:self.tileMap];
     
 }
-
 /*
 // After init
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -418,5 +410,3 @@ if( (self=[super init])) {
 }
 
 @end
-
-
