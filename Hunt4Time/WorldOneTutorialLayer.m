@@ -114,7 +114,6 @@ if( (self=[super init])) {
     
         // behöver man z:-1?
         [self addChild:self.tileMap];
-    
     CCTMXObjectGroup *objectGroup = [_tileMap objectGroupNamed:@"Objects"];
     NSAssert(objectGroup != nil, @"tile map has no objects object layer");
 
@@ -179,7 +178,6 @@ if( (self=[super init])) {
 	}
 	return self;
 }
-
 -(void)loadmap{
     
     // Lägger in min TileMap
