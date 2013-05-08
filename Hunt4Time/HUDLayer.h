@@ -11,7 +11,6 @@
 
 
 
-
 @interface HUDLayer : CCLayerColor
 {
     CCLabelTTF *scoreLabel;

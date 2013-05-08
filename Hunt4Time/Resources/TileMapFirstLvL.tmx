@@ -25,6 +25,7 @@
   </data>
  </layer>
  <objectgroup color="#ff191c" name="Objects" width="20" height="20">
+<<<<<<< HEAD:Hunt4Time/TileMapFirstLvL.tmx
   <properties>
    <property name="Enemy" value="1"/>
   </properties>
@@ -55,23 +56,35 @@
   </data>
  </layer>
  <objectgroup color="#ff191c" name="EnemySpawn1" width="20" height="20">
+=======
+>>>>>>> Adams fungerande kod 8/5:Hunt4Time/Resources/TileMapFirstLvL.tmx
   <properties>
    <property name="Enemy" value="1"/>
   </properties>
-  <object name="EnemySpawn1" x="436" y="146" width="49" height="35">
+  <object name="EnemySpwan1" x="490" y="107">
    <properties>
     <property name="Enemy" value="1"/>
    </properties>
   </object>
-  <object name="EnemySpawn" x="309" y="275" width="54" height="57">
+  <object name="EnemySpawn1" x="434" y="150">
    <properties>
     <property name="Enemy" value="1"/>
    </properties>
   </object>
-  <object name="EnemySpawn1" x="497" y="87" width="46" height="34">
+  <object name="EnemySpawn1" x="337" y="453">
    <properties>
     <property name="Enemy" value="1"/>
    </properties>
   </object>
  </objectgroup>
+ <layer name="SpecialTiles" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhYMJERNybXPFLEiXETNczDBSYxkm8etd1HK/Mojd+JZITRqHm0NW8SBXkUm3nINDHqiUlbpJiHDCbh0EeuefjcTKx51CofqQ0ATeAqyg==
+  </data>
+ </layer>
+ <layer name="Mushroom" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFAwn0WAfaBaNgFJAOhnO6Hc5+ozYAAJvcAJo=
+  </data>
+ </layer>
 </map>

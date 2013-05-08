@@ -20,7 +20,8 @@
 
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.
 
-+(CCScene *) scene
+
+    +(CCScene *) scene
 {
     
     // 'scene' is an autorelease object.
@@ -118,16 +119,12 @@ if( (self=[super init])) {
     CCTMXObjectGroup *objectGroup = [_tileMap objectGroupNamed:@"Objects"];
     NSAssert(objectGroup != nil, @"tile map has no objects object layer");
 
-    
-    
-    //Adam 2013-05-08
+    //Adam
     NSDictionary *spawnPoint = [objectGroup objectNamed:@"SpawnPoint"];
     int x = [spawnPoint[@"x"] integerValue];
     int y = [spawnPoint[@"y"] integerValue];
 
-    
-    
-    //Adam 2013-05-08
+
     for (spawnPoint in [objectGroup objects]) {
         if ([[spawnPoint valueForKey:@"Enemy"] intValue] == 1){
             x = [[spawnPoint valueForKey:@"x"] intValue];
@@ -271,16 +268,16 @@ if( (self=[super init])) {
 }
 
 
-//Adam 2013-05-08
+
+//Adam
 -(void)addEnemyAtX:(int)x y:(int)y {
-    CCSprite *enemy = [CCSprite spriteWithFile:@"CrabbEnemie.png"];
+    CCSprite *enemy = [CCSprite spriteWithFile:@"minotaurus_red.png"];
     enemy.position = ccp(x, y);
     [self.tileMap addChild:enemy];
-   
-    //Adam 2013-05-10
+    
     // Use our animation method and
     // start the enemy moving toward the player
-    [self animateEnemy:enemy];
+    //[self animateEnemy:enemy];
     
     //[self.enemies addObject:enemy];
 }
