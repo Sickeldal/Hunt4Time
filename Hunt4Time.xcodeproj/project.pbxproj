@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		84A5FB511728117C00F60DDF /* HUDLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5FB501728117C00F60DDF /* HUDLayer.m */; };
+		84A6F442173A8E40008DF5B2 /* TileMapFirstLvL.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 84A6F441173A8E40008DF5B2 /* TileMapFirstLvL.tmx */; };
 		FF05385317269273009B7B03 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF05385217269273009B7B03 /* QuartzCore.framework */; };
 		FF05385517269273009B7B03 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF05385417269273009B7B03 /* OpenGLES.framework */; };
 		FF05385717269273009B7B03 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF05385617269273009B7B03 /* OpenAL.framework */; };
@@ -146,7 +147,6 @@
 		FF948BDE17280972005036E1 /* AnimPlayer-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = FF948BD817280972005036E1 /* AnimPlayer-ipadhd.png */; };
 		FF948BDF17280972005036E1 /* AnimPlayer.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF948BD917280972005036E1 /* AnimPlayer.plist */; };
 		FF948BE017280972005036E1 /* AnimPlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = FF948BDA17280972005036E1 /* AnimPlayer.png */; };
-		FF948BE217280B4A005036E1 /* TileMapFirstLvL.tmx in Resources */ = {isa = PBXBuildFile; fileRef = FF948BE117280B4A005036E1 /* TileMapFirstLvL.tmx */; };
 		FF948BE417280B5E005036E1 /* lightsdonefirstmaph2t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF948BE317280B5E005036E1 /* lightsdonefirstmaph2t.jpg */; };
 		FF948BF217294EAE005036E1 /* meta_tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = FF948BF117294EAE005036E1 /* meta_tiles.png */; };
 		FFA5ED9717327B8D002264A7 /* terrain_atlas.png in Resources */ = {isa = PBXBuildFile; fileRef = FFA5ED9617327B8D002264A7 /* terrain_atlas.png */; };
@@ -156,6 +156,7 @@
 /* Begin PBXFileReference section */
 		84A5FB4F1728117C00F60DDF /* HUDLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDLayer.h; sourceTree = "<group>"; };
 		84A5FB501728117C00F60DDF /* HUDLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDLayer.m; sourceTree = "<group>"; };
+		84A6F441173A8E40008DF5B2 /* TileMapFirstLvL.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TileMapFirstLvL.tmx; sourceTree = "<group>"; };
 		FF05384E17269273009B7B03 /* Hunt4Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hunt4Time.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF05385217269273009B7B03 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FF05385417269273009B7B03 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -438,7 +439,6 @@
 		FF948BD817280972005036E1 /* AnimPlayer-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AnimPlayer-ipadhd.png"; path = "Resources/AnimPlayer-ipadhd.png"; sourceTree = "<group>"; };
 		FF948BD917280972005036E1 /* AnimPlayer.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AnimPlayer.plist; path = Resources/AnimPlayer.plist; sourceTree = "<group>"; };
 		FF948BDA17280972005036E1 /* AnimPlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AnimPlayer.png; path = Resources/AnimPlayer.png; sourceTree = "<group>"; };
-		FF948BE117280B4A005036E1 /* TileMapFirstLvL.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TileMapFirstLvL.tmx; path = Resources/TileMapFirstLvL.tmx; sourceTree = "<group>"; };
 		FF948BE317280B5E005036E1 /* lightsdonefirstmaph2t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lightsdonefirstmaph2t.jpg; path = Resources/lightsdonefirstmaph2t.jpg; sourceTree = "<group>"; };
 		FF948BF117294EAE005036E1 /* meta_tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = meta_tiles.png; path = Resources/meta_tiles.png; sourceTree = "<group>"; };
 		FFA5ED9617327B8D002264A7 /* terrain_atlas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = terrain_atlas.png; path = Resources/terrain_atlas.png; sourceTree = "<group>"; };
@@ -922,10 +922,10 @@
 		FFA5EDE71733F2D1002264A7 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				84A6F441173A8E40008DF5B2 /* TileMapFirstLvL.tmx */,
 				FFA5ED9617327B8D002264A7 /* terrain_atlas.png */,
 				FF948BF117294EAE005036E1 /* meta_tiles.png */,
 				FF948BE317280B5E005036E1 /* lightsdonefirstmaph2t.jpg */,
-				FF948BE117280B4A005036E1 /* TileMapFirstLvL.tmx */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -1007,11 +1007,11 @@
 				FF948BDE17280972005036E1 /* AnimPlayer-ipadhd.png in Resources */,
 				FF948BDF17280972005036E1 /* AnimPlayer.plist in Resources */,
 				FF948BE017280972005036E1 /* AnimPlayer.png in Resources */,
-				FF948BE217280B4A005036E1 /* TileMapFirstLvL.tmx in Resources */,
 				FF948BE417280B5E005036E1 /* lightsdonefirstmaph2t.jpg in Resources */,
 				FF948BF217294EAE005036E1 /* meta_tiles.png in Resources */,
 				FFA5ED9717327B8D002264A7 /* terrain_atlas.png in Resources */,
 				FF92EA8E17383323007E7796 /* Play.png in Resources */,
+				84A6F442173A8E40008DF5B2 /* TileMapFirstLvL.tmx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
