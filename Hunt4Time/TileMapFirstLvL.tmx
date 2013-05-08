@@ -54,4 +54,24 @@
    eJxjYBgFAwn0WKlnVi8VzRoFowAfoGa6HWxgOPuN2gAAJiwBLA==
   </data>
  </layer>
+ <objectgroup color="#ff191c" name="EnemySpawn1" width="20" height="20">
+  <properties>
+   <property name="Enemy" value="1"/>
+  </properties>
+  <object name="EnemySpawn1" x="436" y="146" width="49" height="35">
+   <properties>
+    <property name="Enemy" value="1"/>
+   </properties>
+  </object>
+  <object name="EnemySpawn" x="309" y="275" width="54" height="57">
+   <properties>
+    <property name="Enemy" value="1"/>
+   </properties>
+  </object>
+  <object name="EnemySpawn1" x="497" y="87" width="46" height="34">
+   <properties>
+    <property name="Enemy" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>
