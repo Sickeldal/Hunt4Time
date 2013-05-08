@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "cocos2d.h" // HEJ DENNIS LUKTAR KUNGLIGT
+#import "cocos2d.h" //Hej Adam
 
 
 
