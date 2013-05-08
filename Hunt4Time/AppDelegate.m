@@ -60,9 +60,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //Adam
-   // [self tweakSettings];
-    //[[CCDirector sharedDirector] runWithScene:[WorldOneTutorialLayer scene]];
     
 	// Create the main window
 	window_ = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

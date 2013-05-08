@@ -20,10 +20,9 @@
 
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.
 
-
-    +(CCScene *) scene
++(CCScene *) scene
 {
-
+    
     // 'scene' is an autorelease object.
 	CCScene *scene = [CCScene node];
        
@@ -45,6 +44,7 @@
     // return the scene
 	return scene;
 }
+
 // Två metoder för att få ut storleken på min Tilemap(mapSize tar ut hur många tile mappen har)
 // multiplicerar mapsize med map size för att få storleken i points
 - (float)tileMapHeight{
@@ -95,9 +95,6 @@
     return ccp(x,y);
 }
 
-
-//Davids orginal
-//>>>>>>> Add HUDLayer
 // on "init" you need to initialize your instance
 -(id) init
 {
@@ -193,6 +190,24 @@ if( (self=[super init])) {
 	return self;
 }
 
+-(void)loadmap{
+    
+    // Lägger in min TileMap
+    self.tileMap = [CCTMXTiledMap tiledMapWithTMXFile:@"TileMapFirstLvL.tmx"];
+    self.background = [self.tileMap layerNamed:@"Background"];
+    
+    self.mushroom = [_tileMap layerNamed:@"Mushroom"];
+    
+    self.specialTile = [_tileMap layerNamed:@"SpecialTiles"];
+    
+    //  Gör mitt specialTile lager Osynligt
+    // _specialTile.visible = NO;
+    
+    
+    // behöver man z:-1?
+    [self addChild:self.tileMap];
+    
+}
 
 /*
 // After init
@@ -252,7 +267,6 @@ if( (self=[super init])) {
             }
         }
     }
-   // _player.position = position;
     
 }
 
@@ -323,10 +337,8 @@ if( (self=[super init])) {
 
     self.player.moving = YES;
     
-    //Skrickar mapLocation till min moveToward i player "classen"
+    //Skickar mapLocation till min moveToward i player"classen"
     [self.player moveToward:mapLocation];
-    
-
     
     //Startar alla actions igen(pausar dem när man går in i en vägg)
     [self.player resumeSchedulerAndActions];
