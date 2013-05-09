@@ -7,26 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "cocos2d.h" // David test!
-
-
+#import "cocos2d.h"
 
 @interface HUDLayer : CCLayerColor
 {
-    CCLabelTTF *scoreLabel;
-    int score;
-    
-    //Min lives Array
-    NSMutableArray * lives;
-    
 }
-
-//Mitt property på min lives
-@property (nonatomic,retain) NSMutableArray * lives;
-
-
-
--(void)addToScore:(int)number;
 
 
 

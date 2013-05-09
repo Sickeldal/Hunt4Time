@@ -221,8 +221,6 @@ if( (self=[super init])) {
             if (collectible && [collectible isEqualToString:@"True"]) {
                 [_specialTile removeTileAt:tileCoord];
                 [_mushroom removeTileAt:tileCoord];
-                
-                [self.hud addToScore:1];
             }
         }
     }
