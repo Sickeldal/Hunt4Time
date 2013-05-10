@@ -54,7 +54,7 @@
     CGPoint targetVector = ccpNormalize(offset);
     
     //5 Multiply the vector by however fast we want the player to travel in a second (150 here). The result is a vector in points/1 second the tank should travel.
-    float POINTS_PER_SECOND = 50;
+    float POINTS_PER_SECOND = 100;
     CGPoint targetPerSecond = ccpMult(targetVector, POINTS_PER_SECOND);
     
     //6 This method is being called several times a second, so we multiply this vector by the delta time (around 1/60 of a second) to figure out how much we should actually travel.

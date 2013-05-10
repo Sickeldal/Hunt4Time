@@ -28,17 +28,17 @@
   <properties>
    <property name="Enemy" value="1"/>
   </properties>
-  <object name="EnemySpwan1" x="490" y="107">
+  <object name="EnemySpwan1" x="432" y="143">
    <properties>
     <property name="Enemy" value="1"/>
    </properties>
   </object>
-  <object name="EnemySpawn1" x="434" y="150">
+  <object name="EnemySpawn1" x="335" y="301">
    <properties>
     <property name="Enemy" value="1"/>
    </properties>
   </object>
-  <object name="EnemySpawn1" x="337" y="453">
+  <object name="EnemySpawn1" x="271" y="527">
    <properties>
     <property name="Enemy" value="1"/>
    </properties>
@@ -46,12 +46,12 @@
  </objectgroup>
  <layer name="SpecialTiles" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJxjYBhYMJERNybXPFLEiXETNczDBSYxkm8etd1HK/Mojd+JZITRqHm0NW8SBXkUm3nINDHqiUlbpJiHDCbh0EeuefjcTKx51CofqQ0ATeAqyg==
+   eJzVlMEKACAIQ/P/T/rF3U3BNqMaeJHxEGWOcVcqeaG8nX5lpg5eJhOc5+czWT0ML/IgPPa+CuzoZ57nvsgzIqOZqrzTPiMzEPmYDHT+x25NGMAkhQ==
   </data>
  </layer>
  <layer name="Mushroom" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFAwn0WAfaBaNgFJAOhnO6Hc5+ozYAAJvcAJo=
+   eJxjYBgFAwn0WKlnVi8VzRoFowAfoGa6HWxgOPuN2gAAJiwBLA==
   </data>
  </layer>
 </map>

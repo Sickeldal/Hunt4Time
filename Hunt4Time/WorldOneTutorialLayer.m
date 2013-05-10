@@ -112,7 +112,7 @@ if( (self=[super init])) {
         self.specialTile = [_tileMap layerNamed:@"SpecialTiles"];
     
     //  Gör mitt specialTile lager Osynligt
-       // _specialTile.visible = NO;
+        _specialTile.visible = NO;
 
     
         // behöver man z:-1?
@@ -123,14 +123,14 @@ if( (self=[super init])) {
 
     
     
-    //Adam
+    //Adam 2013-05-08
     NSDictionary *spawnPoint = [objectGroup objectNamed:@"SpawnPoint"];
     int x = [spawnPoint[@"x"] integerValue];
     int y = [spawnPoint[@"y"] integerValue];
 
     
     
-    //Adam
+    //Adam 2013-05-08
     for (spawnPoint in [objectGroup objects]) {
         if ([[spawnPoint valueForKey:@"Enemy"] intValue] == 1){
             x = [[spawnPoint valueForKey:@"x"] intValue];
@@ -257,15 +257,16 @@ if( (self=[super init])) {
 }
 
 
-//Adam
+//Adam 2013-05-08
 -(void)addEnemyAtX:(int)x y:(int)y {
-    CCSprite *enemy = [CCSprite spriteWithFile:@"minotaurus_red.png"];
+    CCSprite *enemy = [CCSprite spriteWithFile:@"CrabbEnemie.png"];
     enemy.position = ccp(x, y);
     [self.tileMap addChild:enemy];
-    
+   
+    //Adam 2013-05-10
     // Use our animation method and
     // start the enemy moving toward the player
-    //[self animateEnemy:enemy];
+    [self animateEnemy:enemy];
     
     //[self.enemies addObject:enemy];
 }
@@ -336,6 +337,42 @@ if( (self=[super init])) {
     int x = position.x / _tileMap.tileSize.width;
     int y = ((_tileMap.mapSize.height * _tileMap.tileSize.height) - position.y) / _tileMap.tileSize.height;
     return ccp(x, y);
+}
+
+//Adam 2013-05-10
+// callback. starts another iteration of enemy movement.
+- (void) enemyMoveFinished:(id)sender {
+    CCSprite *enemy = (CCSprite *)sender;
+    
+    [self animateEnemy: enemy];
+}
+
+//Adam 2013-05-10
+// a method to move the enemy 10 pixels toward the player
+- (void) animateEnemy:(CCSprite*)enemy
+{
+    // speed of the enemy
+    ccTime actualDuration = 0.3;
+    
+    // Create the actions
+    id actionMove = [CCMoveBy actionWithDuration:actualDuration
+                                        position:ccpMult(ccpNormalize(ccpSub(_player.position,enemy.position)), 10)];
+    id actionMoveDone = [CCCallFuncN actionWithTarget:self
+                                             selector:@selector(enemyMoveFinished:)];
+    [enemy runAction:
+     [CCSequence actions:actionMove, actionMoveDone, nil]];
+    
+    //Adam 2013-05-10
+    // immediately before creating the actions in animateEnemy
+    // rotate to face the player
+    CGPoint diff = ccpSub(_player.position,enemy.position);
+    float angleRadians = atanf((float)diff.y / (float)diff.x);
+    float angleDegrees = CC_RADIANS_TO_DEGREES(angleRadians);
+    float cocosAngle = -1 * angleDegrees;
+    if (diff.x < 0) {
+        cocosAngle += 180;
+    }
+    enemy.rotation = cocosAngle;
 }
 
 // When the player stops
