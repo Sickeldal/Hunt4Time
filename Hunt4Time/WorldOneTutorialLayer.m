@@ -20,10 +20,14 @@
 
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.
 
+<<<<<<< HEAD
++(CCScene *) scene
+=======
 
     +(CCScene *) scene
+>>>>>>> adam_dev
 {
-
+    
     // 'scene' is an autorelease object.
 	CCScene *scene = [CCScene node];
        
@@ -45,6 +49,7 @@
     // return the scene
 	return scene;
 }
+
 // Två metoder för att få ut storleken på min Tilemap(mapSize tar ut hur många tile mappen har)
 // multiplicerar mapsize med map size för att få storleken i points
 - (float)tileMapHeight{
@@ -95,25 +100,16 @@
     return ccp(x,y);
 }
 
-
-//Davids orginal
-//>>>>>>> Add HUDLayer
 // on "init" you need to initialize your instance
 -(id) init
 {
-if( (self=[super init])) {
-                
-        // Lägger in min TileMap
-        self.tileMap = [CCTMXTiledMap tiledMapWithTMXFile:@"TileMapFirstLvL.tmx"];
-        self.background = [self.tileMap layerNamed:@"Background"];
-    
-        self.mushroom = [_tileMap layerNamed:@"Mushroom"];
-    
-        self.specialTile = [_tileMap layerNamed:@"SpecialTiles"];
-    
-    //  Gör mitt specialTile lager Osynligt
-       // _specialTile.visible = NO;
+    if( (self=[super init])) {
+        
+        //Kallar på metoden loadmap för att ladda våran tilemap
+        [self loadmap];
 
+<<<<<<< HEAD
+=======
     
         // behöver man z:-1?
         [self addChild:self.tileMap];
@@ -139,6 +135,7 @@ if( (self=[super init])) {
         }
     }
     
+>>>>>>> adam_dev
         // Looks for an image with the same name as the passed-in property list, but ending with “.png” instead, and loads that file into the shared CCTextureCache (in our case, AnimPlayer.png).
         // Parses the property list file and keeps track of where all of the sprites are, using CCSpriteFrame objects internally to keep track of this information.
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"AnimPlayer-ipadhd.plist"];
@@ -193,6 +190,27 @@ if( (self=[super init])) {
 	return self;
 }
 
+<<<<<<< HEAD
+-(void)loadmap{
+    
+    // Lägger in min TileMap
+    self.tileMap = [CCTMXTiledMap tiledMapWithTMXFile:@"TileMapFirstLvL.tmx"];
+    self.background = [self.tileMap layerNamed:@"Background"];
+    
+    self.mushroom = [_tileMap layerNamed:@"Mushroom"];
+    
+    self.specialTile = [_tileMap layerNamed:@"SpecialTiles"];
+    
+    //  Gör mitt specialTile lager Osynligt
+    // _specialTile.visible = NO;
+    
+    
+    // behöver man z:-1?
+    [self addChild:self.tileMap];
+    
+}
+=======
+>>>>>>> adam_dev
 
 /*
 // After init
@@ -252,7 +270,6 @@ if( (self=[super init])) {
             }
         }
     }
-   // _player.position = position;
     
 }
 
@@ -322,10 +339,8 @@ if( (self=[super init])) {
 
     self.player.moving = YES;
     
-    //Skrickar mapLocation till min moveToward i player "classen"
+    //Skickar mapLocation till min moveToward i player"classen"
     [self.player moveToward:mapLocation];
-    
-
     
     //Startar alla actions igen(pausar dem när man går in i en vägg)
     [self.player resumeSchedulerAndActions];
