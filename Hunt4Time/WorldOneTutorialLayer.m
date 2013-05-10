@@ -20,12 +20,8 @@
 
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.
 
-<<<<<<< HEAD
-+(CCScene *) scene
-=======
 
     +(CCScene *) scene
->>>>>>> adam_dev
 {
     
     // 'scene' is an autorelease object.
@@ -108,11 +104,9 @@
         //Kallar på metoden loadmap för att ladda våran tilemap
         [self loadmap];
 
-<<<<<<< HEAD
-=======
     
         // behöver man z:-1?
-        [self addChild:self.tileMap];
+     
     
     CCTMXObjectGroup *objectGroup = [_tileMap objectGroupNamed:@"Objects"];
     NSAssert(objectGroup != nil, @"tile map has no objects object layer");
@@ -135,7 +129,6 @@
         }
     }
     
->>>>>>> adam_dev
         // Looks for an image with the same name as the passed-in property list, but ending with “.png” instead, and loads that file into the shared CCTextureCache (in our case, AnimPlayer.png).
         // Parses the property list file and keeps track of where all of the sprites are, using CCSpriteFrame objects internally to keep track of this information.
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"AnimPlayer-ipadhd.plist"];
@@ -190,7 +183,6 @@
 	return self;
 }
 
-<<<<<<< HEAD
 -(void)loadmap{
     
     // Lägger in min TileMap
@@ -209,8 +201,6 @@
     [self addChild:self.tileMap];
     
 }
-=======
->>>>>>> adam_dev
 
 /*
 // After init
