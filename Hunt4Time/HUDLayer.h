@@ -8,10 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h" //Hej Adam 2 gånger om!
-<<<<<<< HEAD
-=======
-
->>>>>>> fb34de36f068eda7ebdbd14ba9d7d963acb02193
 
 
 

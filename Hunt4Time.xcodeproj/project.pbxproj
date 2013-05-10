@@ -14,9 +14,10 @@
 		84A6F442173A8E40008DF5B2 /* TileMapFirstLvL.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 84A6F441173A8E40008DF5B2 /* TileMapFirstLvL.tmx */; };
 		84A6F459173A9699008DF5B2 /* Life-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A6F458173A9699008DF5B2 /* Life-bar.png */; };
 		84A6F45F173A9A10008DF5B2 /* minotaurus_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A6F45E173A9A10008DF5B2 /* minotaurus_red.png */; };
-		84A6F474173AA8AD008DF5B2 /* TileMapFirstLvL.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 84A6F473173AA8AD008DF5B2 /* TileMapFirstLvL.tmx */; };
 		84A6F477173AAAAA008DF5B2 /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6F476173AAAAA008DF5B2 /* Enemy.m */; };
 		84A6F442173A8E40008DF5B2 /* TileMapFirstLvL.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 84A6F441173A8E40008DF5B2 /* TileMapFirstLvL.tmx */; };
+		E4EF233B173CE8D800560937 /* TileMapFirstLvL.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E4EF233A173CE8D800560937 /* TileMapFirstLvL.tmx */; };
+		E4EF233D173CE94B00560937 /* terrain_atlas.png in Resources */ = {isa = PBXBuildFile; fileRef = E4EF233C173CE94B00560937 /* terrain_atlas.png */; };
 		FF05385317269273009B7B03 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF05385217269273009B7B03 /* QuartzCore.framework */; };
 		FF05385517269273009B7B03 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF05385417269273009B7B03 /* OpenGLES.framework */; };
 		FF05385717269273009B7B03 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF05385617269273009B7B03 /* OpenAL.framework */; };
@@ -157,7 +158,6 @@
 		FF948BE017280972005036E1 /* AnimPlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = FF948BDA17280972005036E1 /* AnimPlayer.png */; };
 		FF948BE417280B5E005036E1 /* lightsdonefirstmaph2t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF948BE317280B5E005036E1 /* lightsdonefirstmaph2t.jpg */; };
 		FF948BF217294EAE005036E1 /* meta_tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = FF948BF117294EAE005036E1 /* meta_tiles.png */; };
-		FFA5ED9717327B8D002264A7 /* terrain_atlas.png in Resources */ = {isa = PBXBuildFile; fileRef = FFA5ED9617327B8D002264A7 /* terrain_atlas.png */; };
 		FFA5EDE31733E1C2002264A7 /* MainMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA5EDE21733E1C2002264A7 /* MainMenuScene.m */; };
 /* End PBXBuildFile section */
 
@@ -169,7 +169,6 @@
 		84A6F441173A8E40008DF5B2 /* TileMapFirstLvL.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TileMapFirstLvL.tmx; sourceTree = "<group>"; };
 		84A6F458173A9699008DF5B2 /* Life-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Life-bar.png"; sourceTree = "<group>"; };
 		84A6F45E173A9A10008DF5B2 /* minotaurus_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minotaurus_red.png; sourceTree = "<group>"; };
-		84A6F473173AA8AD008DF5B2 /* TileMapFirstLvL.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TileMapFirstLvL.tmx; path = Resources/TileMapFirstLvL.tmx; sourceTree = "<group>"; };
 		84A6F475173AAAAA008DF5B2 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
 		84A6F476173AAAAA008DF5B2 /* Enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy.m; sourceTree = "<group>"; };
 		84A6F441173A8E40008DF5B2 /* TileMapFirstLvL.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TileMapFirstLvL.tmx; sourceTree = "<group>"; };
@@ -178,6 +177,10 @@
 		84A6F473173AA8AD008DF5B2 /* TileMapFirstLvL.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TileMapFirstLvL.tmx; path = Resources/TileMapFirstLvL.tmx; sourceTree = "<group>"; };
 		84A6F475173AAAAA008DF5B2 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
 		84A6F476173AAAAA008DF5B2 /* Enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy.m; sourceTree = "<group>"; };
+=======
+		E4EF233A173CE8D800560937 /* TileMapFirstLvL.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TileMapFirstLvL.tmx; sourceTree = "<group>"; };
+		E4EF233C173CE94B00560937 /* terrain_atlas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = terrain_atlas.png; sourceTree = "<group>"; };
+>>>>>>> Nu tror Dennis det funkar 10/5
 		FF05384E17269273009B7B03 /* Hunt4Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hunt4Time.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF05385217269273009B7B03 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FF05385417269273009B7B03 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -462,7 +465,6 @@
 		FF948BDA17280972005036E1 /* AnimPlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AnimPlayer.png; path = Resources/AnimPlayer.png; sourceTree = "<group>"; };
 		FF948BE317280B5E005036E1 /* lightsdonefirstmaph2t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lightsdonefirstmaph2t.jpg; path = Resources/lightsdonefirstmaph2t.jpg; sourceTree = "<group>"; };
 		FF948BF117294EAE005036E1 /* meta_tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = meta_tiles.png; path = Resources/meta_tiles.png; sourceTree = "<group>"; };
-		FFA5ED9617327B8D002264A7 /* terrain_atlas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = terrain_atlas.png; path = Resources/terrain_atlas.png; sourceTree = "<group>"; };
 		FFA5EDE11733E1C2002264A7 /* MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuScene.h; sourceTree = "<group>"; };
 		FFA5EDE21733E1C2002264A7 /* MainMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -565,6 +567,7 @@
 		FF05386517269273009B7B03 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E4EF233C173CE94B00560937 /* terrain_atlas.png */,
 				84A6F45D173A9A04008DF5B2 /* Enemies */,
 				84A6F454173A9612008DF5B2 /* Hudlayer */,
 				FFA5EDE81733F2EF002264A7 /* Menu */,
@@ -971,6 +974,7 @@
 				84A6F441173A8E40008DF5B2 /* TileMapFirstLvL.tmx */,
 				84A6F473173AA8AD008DF5B2 /* TileMapFirstLvL.tmx */,
 				FFA5ED9617327B8D002264A7 /* terrain_atlas.png */,
+				E4EF233A173CE8D800560937 /* TileMapFirstLvL.tmx */,
 				FF948BF117294EAE005036E1 /* meta_tiles.png */,
 				FF948BE317280B5E005036E1 /* lightsdonefirstmaph2t.jpg */,
 			);
@@ -1056,7 +1060,6 @@
 				FF948BE017280972005036E1 /* AnimPlayer.png in Resources */,
 				FF948BE417280B5E005036E1 /* lightsdonefirstmaph2t.jpg in Resources */,
 				FF948BF217294EAE005036E1 /* meta_tiles.png in Resources */,
-				FFA5ED9717327B8D002264A7 /* terrain_atlas.png in Resources */,
 				FF92EA8E17383323007E7796 /* Play.png in Resources */,
 				84A6F459173A9699008DF5B2 /* Life-bar.png in Resources */,
 				84A6F45F173A9A10008DF5B2 /* minotaurus_red.png in Resources */,
@@ -1071,6 +1074,10 @@
 				84A6F459173A9699008DF5B2 /* Life-bar.png in Resources */,
 				84A6F45F173A9A10008DF5B2 /* minotaurus_red.png in Resources */,
 				84A6F474173AA8AD008DF5B2 /* TileMapFirstLvL.tmx in Resources */,
+				84A6F459173A9699008DF5B2 /* Life-bar.png in Resources */,
+				84A6F45F173A9A10008DF5B2 /* minotaurus_red.png in Resources */,
+				E4EF233B173CE8D800560937 /* TileMapFirstLvL.tmx in Resources */,
+				E4EF233D173CE94B00560937 /* terrain_atlas.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

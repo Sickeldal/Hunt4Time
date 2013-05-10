@@ -115,8 +115,7 @@ if( (self=[super init])) {
     
         // behöver man z:-1?
         [self addChild:self.tileMap];
-    CCTMXObjectGroup *objectGroup = [_tileMap objectGroupNamed:@"Objects"];
-    NSAssert(objectGroup != nil, @"tile map has no objects object layer");
+
     
     CCTMXObjectGroup *objectGroup = [_tileMap objectGroupNamed:@"Objects"];
     NSAssert(objectGroup != nil, @"tile map has no objects object layer");
@@ -190,6 +189,7 @@ if( (self=[super init])) {
 	}
 	return self;
 }
+
 -(void)loadmap{
     
     // Lägger in min TileMap
@@ -208,6 +208,7 @@ if( (self=[super init])) {
     [self addChild:self.tileMap];
     
 }
+
 /*
 // After init
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
