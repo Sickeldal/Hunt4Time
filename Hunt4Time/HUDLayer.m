@@ -46,12 +46,14 @@
         
         for(int i=0;i<3;i++)
         {
-            CCSprite * life = [CCSprite spriteWithFile:@"Heart_symbol_c00.png"];
+            CCSprite * life = [CCSprite spriteWithFile:@"Life-bar.png"];
             // Tänk på setPosition
-            [life setPosition:ccp(18+ 28*i,465)];
+            [life setPosition:ccp(180,20)];
             [self addChild:life];
             [lives addObject:life];
         }
+        
+        //[life setPosition:ccp(18+ 28*i,465)];
         
         
         
