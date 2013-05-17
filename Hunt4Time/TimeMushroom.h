@@ -1,5 +1,5 @@
 //
-//  Enemies.h
+//  TimeMushroom.h
 //  Hunt4Time
 //
 //  Created by admin on 5/15/13.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
-@interface Enemy : CCNode {
+@interface TimeMushroom : CCNode {
     
 }
 

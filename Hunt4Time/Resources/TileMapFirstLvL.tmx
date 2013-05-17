@@ -43,6 +43,7 @@
     <property name="Enemy" value="1"/>
    </properties>
   </object>
+  <object name="SpawnPoint" x="128" y="293" width="21" height="17"/>
  </objectgroup>
  <layer name="SpecialTiles" width="20" height="20">
   <data encoding="base64" compression="zlib">

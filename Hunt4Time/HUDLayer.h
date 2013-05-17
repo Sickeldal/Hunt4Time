@@ -10,6 +10,10 @@
 #import "cocos2d.h" //Hej Adam 2 gånger om!
 
 
+//Adam 2013-05-10
+
+
+
 
 @interface HUDLayer : CCLayerColor
 {
@@ -21,10 +25,12 @@
     
 }
 
+
 //Mitt property på min lives
 @property (nonatomic,retain) NSMutableArray * lives;
-
-
+@property (unsafe_unretained) HUDLayer *gameLayer;
+//Adam 2013-05-10
+@property (assign) int mode;
 
 -(void)addToScore:(int)number;
 

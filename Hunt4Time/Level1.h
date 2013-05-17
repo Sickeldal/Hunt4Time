@@ -1,5 +1,5 @@
 //
-//  Enemies.h
+//  Level1.h
 //  Hunt4Time
 //
 //  Created by admin on 5/15/13.
@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "WorldWrapper.h"
 
-@interface Enemy : CCNode {
+
+
+
+@interface Level1 : CCLayer {
     
 }
 

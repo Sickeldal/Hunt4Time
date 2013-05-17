@@ -23,7 +23,7 @@
 @property (nonatomic) BOOL moving;
 
 - (id)initWithLayer:(WorldOneTutorialLayer *)layer; // type:(int)type hp:(int)hp;
-- (void)moveToward:(CGPoint)targetPosition;
+//- (void)moveToward:(CGPoint)targetPosition;
 
 @end
 
